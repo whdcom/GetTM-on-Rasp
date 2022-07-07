@@ -103,7 +103,7 @@ int cbFuncHandle(CallBackData cbData, void* param) {
 			tempMatrix = nullptr;
 	}
 	//每1秒测一次
-	std::this_thread::sleep_for(std::chrono::milliseconds(40));
+	std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 	return 0;
 }
 
@@ -111,6 +111,7 @@ int main()
 {
 	//int iWidth = 120;
 	//int iHight = 90;
+	flag:
 	int isDebugging = 0;
 	/******************************初始化sdk模块******************************/
 	g_Module = CreateModuleInstance(whd);
@@ -122,6 +123,7 @@ int main()
 	}
 	catch(double){
 		std::cerr<<"error !!!!!!!\n";
+		//goto flag;
 	}
 	if (g_Module) {
 		/******************************设置测温参数******************************/
@@ -152,6 +154,10 @@ int main()
 		int heratInterval = 5;
         MeasureParamsControl(g_Module, HEART_BEATING_ENABLE,(void *) &heratInterval); 
 	}
+	else{
+		goto flag;	
+	}
+	
 
 	/******************************用户线程其他操作******************************/
 	while (true) {

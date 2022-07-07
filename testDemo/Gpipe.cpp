@@ -61,7 +61,7 @@ void Gpipe(char* m)
             
             int bytes_read = 245759;
             buffer[bytes_read] = '\0';
-            while (bytes_read > 0)
+            if (bytes_read > 0)
             {
                 
                 res = write(pipe_fd, buffer, bytes_read);

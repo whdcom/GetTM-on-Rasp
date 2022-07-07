@@ -29,7 +29,7 @@ typedef long long           INT64_T;
 typedef float               FLOAT_T;
 typedef double              DOUBLE_T;
 #ifdef WINDOWS_PLATFORM
-typedef void *				HANDLE_T;	//å…¼å®¹32bitå’Œ64bitæ“ä½œç³»ç»Ÿ
+typedef void *				HANDLE_T;	//¼æÈİ32bitºÍ64bit²Ù×÷ÏµÍ³
 #else
 typedef UINT64_T			HANDLE_T;
 #endif // WINDOWS_PLATFORM
@@ -52,5 +52,4 @@ typedef enum
 #endif
 
 #endif // !COMMON_TYPE_H
-
 
