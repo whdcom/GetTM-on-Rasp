@@ -1,0 +1,38 @@
+2022/7/5 11:50:5:584 INFO start clearMoudleXData.
+2022/7/5 11:50:6:597 ERROR readUsbData libusb_bulk_transfer failed: LIBUSB_ERROR_TIMEOUT
+2022/7/5 11:50:6:597 INFO clearMoudleData readLength=0 count=1
+2022/7/5 11:50:6:597 INFO start getModuleData.
+2022/7/5 11:50:6:598 INFO getHeader success.length=4097
+2022/7/5 11:50:6:598 INFO start clearMoudleXData.
+2022/7/5 11:50:7:599 ERROR readUsbData libusb_bulk_transfer failed: LIBUSB_ERROR_TIMEOUT
+2022/7/5 11:50:7:599 INFO clearMoudleData readLength=0 count=1
+2022/7/5 11:50:7:599 INFO read jwTableNumber = 7
+2022/7/5 11:50:7:599 INFO jw 0 = 931
+2022/7/5 11:50:7:599 INFO jw 1 = 1437
+2022/7/5 11:50:7:599 INFO jw 2 = 2430
+2022/7/5 11:50:7:599 INFO jw 3 = 2923
+2022/7/5 11:50:7:599 INFO jw 4 = 3413
+2022/7/5 11:50:7:599 INFO jw 5 = 3902
+2022/7/5 11:50:7:599 INFO jw 6 = 4388
+2022/7/5 11:50:7:599 INFO read JW table end
+2022/7/5 11:50:7:600 INFO pageId=198 size=16806. read=16384, count=16384
+2022/7/5 11:50:7:601 INFO pageId=198 size=16806. read=422, count=16806
+2022/7/5 11:50:7:601 INFO read CurveData end. len=16800
+2022/7/5 11:50:7:626 INFO getDevInfo ProductModel=ZX03&HasFpga=1&Width=256&Height=192&ARMVersion=1.2.6.20210125_Beta
+.
+2022/7/5 11:50:7:627 INFO getDevInfo ARMVersion=1.2.6.20210125_Beta, HasFpga=1.
+2022/7/5 11:50:7:627 MODULE_PORTING INFO thread_create 0x948dfbe0
+2022/7/5 11:50:7:627 INFO read SN=ZX03C220000432. res=0 len=16
+2022/7/5 11:50:7:628 INFO setScaleTimes=1.000000
+2022/7/5 11:50:7:630 MODULE_PORTING INFO thread_create 0x948db1a0
+2022/7/5 11:50:7:630 INFO setAmbientTemp 25.000000
+2022/7/5 11:50:7:748 DBG NUC Shutter realTimeJpmTemp = 2718, jpmTempWhenNUCShutter = 0
+2022/7/5 11:50:7:748 INFO doNuc nucStatus=1
+2022/7/5 11:50:8:17 INFO changgeGear currentGear=3 FpaTemp=27.187500.
+2022/7/5 11:50:8:29 INFO doNuc nucStatus=1
+2022/7/5 11:50:8:76 INFO nucStatus=2, bOrdinaryShutter=1
+2022/7/5 11:50:9:836 INFO nucStatus=3, bOrdinaryShutter=0
+2022/7/5 11:56:17:787 INFO changgeGear currentGear=4 FpaTemp=29.237499.
+2022/7/5 11:56:17:803 INFO doNuc nucStatus=1
+2022/7/5 11:56:17:846 INFO nucStatus=2, bOrdinaryShutter=1
+2022/7/5 11:56:19:607 INFO nucStatus=3, bOrdinaryShutter=0
