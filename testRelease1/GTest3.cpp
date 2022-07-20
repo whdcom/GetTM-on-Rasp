@@ -129,6 +129,8 @@ int main()
 	MeasureParamsControl(g_Module, DEBUGGING_PATH, (void*)"/home/pi/Desktop/ArmSdk/debug.log");
 	MeasureParamsControl(g_Module, SET_DEBUGGING, &isDebugging);
 	//RegisterImgCallBack(g_Module, cbFuncHandle, nullptr, (int)1);
+	
+	
 	try{
 		RegisterImgCallBack(g_Module, cbFuncHandle, nullptr, (int)1);	
 	}
@@ -154,7 +156,7 @@ int main()
 		else {
 			std::cout << "set environment is"<< fEnvironment << std::endl;
 		}
-		//设置成像格式
+		//设置成像格式，可以形成彩色图像
 		int format = 1;
 		if (ImageParamsControl(g_Module, SET_FORMAT, &format)!= GUIDEIR_OK) {
 			std::cout << "set format error!" << std::endl;

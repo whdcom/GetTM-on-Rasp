@@ -34,7 +34,7 @@ void Gpipe(char* m)
     //char buffer[245759 + 1];
     char *buffer;
     buffer = m;
-    //判断文件是否存在，不存在则创建管道文件，FOK表示是否存在
+    //判断文件是否存在，不存在则创建管道文件，FOK表示是否存在。只需要创建一次
     if (access(fifo_name, F_OK) == -1)
     {
         //创建管道
@@ -89,7 +89,8 @@ void Gpipe(char* m)
         }
         printf("Process %d finished\n", getpid());
         //exit(EXIT_SUCCESS); 
-        close(pipe_fd);
-        unlink(fifo_name);
+        //不用每次都关闭，提高速度
+		//close(pipe_fd);
+        //unlink(fifo_name);
   
 }
